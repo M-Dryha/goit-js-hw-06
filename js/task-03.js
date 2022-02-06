@@ -19,7 +19,7 @@ const addGalleryElem = document.querySelector(".gallery");
 const addCreateElem = images.map(image => {
 
   let createList = document.createElement('li');
-  createList = `<li class = 'gallery-item'> <img src = ${image.url} alt= ${image.alt} width = 800px/> <li/>`;
+  createList = `<li class = 'gallery-item'> <img src = ${image.url} alt= '${image.alt}' width = 800px/> <li/>`;
 
   
   

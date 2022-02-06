@@ -15,9 +15,17 @@ const addCreateElem = ingredients.map(ingredient => {
   const createElem = document.createElement("li");
     
   createElem.textContent = ingredient;
-  createElem.classList.add('item');
-  addListElem.append(createElem);
-  console.log(createElem);
+  return createElem;
 });
 
+addListElem.append(...addCreateElem);
 
+
+
+
+
+// const addListElem = document.querySelector('#ingredients');
+
+// const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
+
+// addListElem.innerHTML = list;

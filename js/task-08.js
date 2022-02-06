@@ -8,12 +8,14 @@ function onFormSubmit(event) {
       
     if (formElem.email.value === '' || formElem.password.value === '') {
         alert('Все поля должны быть заполнены!');
-    };
-    
-    const formData = new FormData(event.currentTarget);  
+    }
+    else {
+         const formData = new FormData(event.currentTarget);  
     let newObjectData = Object.fromEntries(formData);
      console.log(newObjectData);
 
+    }
+   
    
      form.reset();
    
